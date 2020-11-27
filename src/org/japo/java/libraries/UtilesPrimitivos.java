@@ -25,4 +25,20 @@ public class UtilesPrimitivos {
         double media = (n1 + n2) / 2;
         return media;
     }
+    
+    public static final int analizarRango(double num, double min, double max) {
+        int rango;
+        
+        if (num > max) {
+            rango = 2;
+            
+        } else if (num < min) {
+            rango = 1;
+            
+        } else {
+            rango = 0;
+        }
+        
+        return rango;
+    }
 }
