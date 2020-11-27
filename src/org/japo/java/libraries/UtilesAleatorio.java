@@ -15,8 +15,7 @@
  */
 package org.japo.java.libraries;
 
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.Random;
 
 /**
  *
@@ -24,9 +23,11 @@ import java.util.Scanner;
  */
 public class UtilesAleatorio {
 
-    public static final Scanner SCN
-            = new Scanner(System.in, "Windows-1252")
-                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
-
-
+    public static final Random RND = new Random();
+    
+    public static final int aleatorioEntero(int min, int max) {
+        int valorRnd = RND.nextInt(max - min + 1) + min;
+        
+        return valorRnd;
+    }
 }
