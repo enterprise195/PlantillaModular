@@ -30,4 +30,22 @@ public class UtilesAleatorio {
         
         return valorRnd;
     }
+    
+    public static final double aleatorioDouble(double min, double max) {
+        double valorRnd = RND.nextDouble()*(max - min + 1) + min;
+        
+        return valorRnd;
+    }
+    
+    public static final boolean aleatorioEntero() {
+        boolean valorRnd = RND.nextBoolean();
+        
+        return valorRnd;
+    }
+    
+    public static final char aleatorioDouble(char carMin, char carMax) {
+        char valorRnd = (char)(RND.nextInt(carMax - carMin + 1) + carMin);
+        
+        return valorRnd;
+    }
 }
