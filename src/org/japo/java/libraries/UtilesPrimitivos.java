@@ -41,4 +41,13 @@ public class UtilesPrimitivos {
         
         return rango;
     }
+    
+    public static final boolean validar(int num, char ctr, String letras) {       
+        return calcular(num, letras) == ctr;
+    }
+    
+    public static final char calcular(int num, String letras) {
+        int letraDni = num % 23;
+        return (letras.charAt(letraDni));
+    }
 }
